@@ -33,7 +33,7 @@ class Listing extends Component {
               <div className="card-body">
                 <div className="row">
                   <div className="col-3">
-                    <img src={"/images/" + photo.url} className="rounded float-left img-thumbnail" alt={photo.alt} />
+                    <img src={"./images/" + photo.url} className="rounded float-left img-thumbnail" alt={photo.alt} />
                   </div>
                   <div className="col">
                     <h3 className="card-title">{title}</h3>
