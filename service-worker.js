@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/elysium/precache-manifest.f9cd49ff917ccbdecf345c4601f85b18.js"
+  "/elysium/precache-manifest.233a6afefe60887164cc1169e9836ab6.js"
 );
 
 workbox.clientsClaim();

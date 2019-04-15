@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "f58b45a058f16a95ed4c",
-    "url": "/elysium/static/js/main.09820217.chunk.js"
+    "revision": "718503ac0ee02935a865",
+    "url": "/elysium/static/js/main.6c5bf25b.chunk.js"
   },
   {
     "revision": "004ea836242e87833431",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/elysium/static/js/2.15bba166.chunk.js"
   },
   {
-    "revision": "c0bbbb3829028ed3462b3c4719d99277",
+    "revision": "57e579c4e74262b359f18c777a1a0086",
     "url": "/elysium/index.html"
   }
 ];
