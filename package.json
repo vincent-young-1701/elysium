@@ -2,7 +2,7 @@
   "name": "elysium",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vincent-young-1701.github.io/elysium",
+  "homepage": "https://vincent-young-1701.github.io/elysium/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
