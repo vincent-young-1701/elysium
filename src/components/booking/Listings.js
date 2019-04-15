@@ -9,25 +9,29 @@ class Listings extends Component {
       <Consumer>
         {value => {
           const { listings } = value;
+          let view;
+          if (listings.length) {
+            view = listings.map(listing => (
+              <Listing
+                key={listing.id}
+                id={listing.id}
+                title={listing.title}
+                description={listing.description}
+                price={listing.price}
+                amenities={listing.amenities}
+                photo={listing.photo}
+                smoking={listing.smoking} />
+            ))
+          } else {
+            view = <h2>Refine your search to find rooms.</h2>;
+          }
           return (
             <div className="row">
               <div className="col-3">
                 <Filter />
               </div>
               <div className="col">
-                {
-                  listings.map(listing => (
-                    <Listing
-                      key={listing.id}
-                      id={listing.id}
-                      title={listing.title}
-                      description={listing.description}
-                      price={listing.price}
-                      amenities={listing.amenities}
-                      photo={listing.photo}
-                      smoking={listing.smoking} />
-                  ))
-                }
+                {view}
               </div>
             </div>
           )

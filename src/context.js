@@ -10,9 +10,38 @@ const reducer = (state, action) => {
         current: action.payload
       };
     case 'PAY':
-      return state;
+      return {
+        ...state,
+        booked: action.payload
+      }
     case 'SEARCH':
-      return state;
+      return {
+        ...state,
+        listings: [
+          {
+            id: 123456,
+            title: 'Queen Room',
+            description: 'A great room with lots of space',
+            amenities: ['jacuzzi', 'bar', 'non-smoking', 'accessible'],
+            photo: {
+              url: '1.jpg',
+              alt: 'Nice view'
+            },
+            price: 150
+          },
+          {
+            id: 123457,
+            title: 'King Room',
+            description: 'A great room with lots of space',
+            amenities: ['jacuzzi', 'bar', 'non-smoking', 'accessible'],
+            photo: {
+              url: '2.jpg',
+              alt: 'Nice view'
+            },
+            price: 190
+          }
+        ],
+      }
     default:
       return state;
   }
@@ -21,30 +50,8 @@ const reducer = (state, action) => {
 export class Provider extends Component {
   state = {
     current: {},
-    listings: [
-      {
-        id: 123456,
-        title: 'Queen Room',
-        description: 'A great room with lots of space',
-        amenities: ['jacuzzi', 'bar', 'non-smoking', 'accessible'],
-        photo: {
-          url: '1.jpg',
-          alt: 'Nice view'
-        },
-        price: 150
-      },
-      {
-        id: 123457,
-        title: 'King Room',
-        description: 'A great room with lots of space',
-        amenities: ['jacuzzi', 'bar', 'non-smoking', 'accessible'],
-        photo: {
-          url: '2.jpg',
-          alt: 'Nice view'
-        },
-        price: 190
-      }
-    ],
+    listings: [],
+    booked: {},
     dispatch: action => {
       this.setState(state => reducer(state, action))
     }
