@@ -28,7 +28,7 @@ class Listing extends Component {
       <Consumer>
         {value => {
           const { dispatch, listings } = value;
-          const src = `./images/${photo.url}`;
+          const src = `\./images/${photo.url}`;
           return (
             <div className="card mb-3">
               <div className="card-body">
