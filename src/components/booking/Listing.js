@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Consumer } from '../../context';
+import { Link } from 'react-router-dom';
 
 class Listing extends Component {
   constructor(props) {
@@ -8,7 +9,6 @@ class Listing extends Component {
   }
   book(dispatch, listings, id) {
     return event => {
-      event.preventDefault();
       const [listing] = listings.filter(listing => {
         return listing.id === id;
       });
@@ -48,7 +48,7 @@ class Listing extends Component {
                   </div>
                   <div className="col-3 text-right">
                     <div className="mb-3">${price}/day</div>
-                    <button onClick={this.book(dispatch, listings, id)} type="button" className="btn btn-primary" data-toggle="modal" data-target="#paymentModal">Book</button>
+                    <Link to={`/book/${id}`} onClick={this.book(dispatch, listings, id)} className="btn btn-primary">Book</Link>
                   </div>
                 </div>
               </div>

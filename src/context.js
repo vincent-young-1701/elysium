@@ -21,8 +21,8 @@ const reducer = (state, action) => {
           {
             id: 123456,
             title: 'Queen Room',
-            description: 'A great room with lots of space',
-            amenities: ['jacuzzi', 'bar', 'non-smoking', 'accessible'],
+            description: 'Luxurious room with spacious queen bed.',
+            amenities: ['non-smoking', 'accessible'],
             photo: {
               url: '1.jpg',
               alt: 'Nice view'
@@ -32,8 +32,8 @@ const reducer = (state, action) => {
           {
             id: 123457,
             title: 'King Room',
-            description: 'A great room with lots of space',
-            amenities: ['jacuzzi', 'bar', 'non-smoking', 'accessible'],
+            description: 'A great room with lots of space and a massive king bed.',
+            amenities: ['jucazzi', 'non-smoking', 'accessible'],
             photo: {
               url: '2.jpg',
               alt: 'Nice view'

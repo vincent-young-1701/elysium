@@ -39,26 +39,15 @@ class Filter extends Component {
                 </select>
               </div>
 
-              <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="smoking" value="smoking" />
-                <label className="form-check-label" htmlFor="smoking">Smoking</label>
+              <div className="form-group">
+                <label htmlFor="people">Max Price</label>
+                <select className="form-control" id="price">
+                  <option>$1000</option>
+                  <option>$500</option>
+                  <option>$100</option>
+                </select>
               </div>
 
-              <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="bar" value="bar" />
-                <label className="form-check-label" htmlFor="bar">Bar</label>
-              </div>
-
-              <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="accessible" value="accessible" />
-                <label className="form-check-label" htmlFor="accessible">Accessible</label>
-              </div>
-
-
-              <div className="form-check mb-3">
-                <input className="form-check-input" type="checkbox" id="jacuzzi" value="jacuzzi" />
-                <label className="form-check-label" htmlFor="jacuzzi">Jacuzzi</label>
-              </div>
               <button type="submit" className="btn btn-primary">Search</button>
             </form>
           )
